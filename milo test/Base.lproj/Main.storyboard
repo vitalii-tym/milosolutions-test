@@ -83,6 +83,7 @@ Our goal is:
                                 <state key="normal" title="Test 3"/>
                                 <connections>
                                     <action selector="test3Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gpl-xX-xiU"/>
+                                    <segue destination="2y8-wR-pMr" kind="show" id="h4Q-e3-HLO"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -163,6 +164,39 @@ Our goal is:
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DvB-VU-NSo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1846" y="142"/>
+        </scene>
+        <!--Test3 View Controller-->
+        <scene sceneID="MFE-Cu-Zm1">
+            <objects>
+                <viewController id="2y8-wR-pMr" customClass="test3ViewController" customModule="milo_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EC7-MD-Gwh"/>
+                        <viewControllerLayoutGuide type="bottom" id="sjv-3Y-6Vx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0Sl-A8-YN2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;Greeting label&gt;" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkM-hO-LVO">
+                                <rect key="frame" x="123.5" y="142" width="128" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pkM-hO-LVO" firstAttribute="centerX" secondItem="0Sl-A8-YN2" secondAttribute="centerX" id="Vqh-kj-cNg"/>
+                            <constraint firstItem="pkM-hO-LVO" firstAttribute="top" secondItem="EC7-MD-Gwh" secondAttribute="bottom" constant="78" id="kpN-cw-fUv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="greetingLabel" destination="pkM-hO-LVO" id="SQJ-9c-1uq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G9o-mG-Xpf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1845.5999999999999" y="882.90854572713647"/>
         </scene>
         <!--Test1 View Controller-->
         <scene sceneID="n4i-oV-fGs">

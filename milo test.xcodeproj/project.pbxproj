@@ -16,6 +16,7 @@
 		FEFB0E2D1E893F5E005A810E /* test1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFB0E2C1E893F5E005A810E /* test1ViewController.swift */; };
 		FEFB0E371E896589005A810E /* test2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFB0E361E896589005A810E /* test2ViewController.swift */; };
 		FEFB0E3A1E896609005A810E /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFB0E391E896609005A810E /* UIViewController.swift */; };
+		FEFB0E3D1E896979005A810E /* test3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFB0E3C1E896979005A810E /* test3ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		FEFB0E2C1E893F5E005A810E /* test1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = test1ViewController.swift; sourceTree = "<group>"; };
 		FEFB0E361E896589005A810E /* test2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = test2ViewController.swift; sourceTree = "<group>"; };
 		FEFB0E391E896609005A810E /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		FEFB0E3C1E896979005A810E /* test3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = test3ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 			children = (
 				FEFB0E251E893A91005A810E /* Test 1 */,
 				FEFB0E351E8964D8005A810E /* Test 2 */,
+				FEFB0E3B1E8968F9005A810E /* Test 3 */,
 				FE7607121E892FB200A405A9 /* AppDelegate.swift */,
 				FE7607141E892FB200A405A9 /* ViewController.swift */,
 				FE7607161E892FB200A405A9 /* Main.storyboard */,
@@ -106,6 +109,14 @@
 				FEFB0E391E896609005A810E /* UIViewController.swift */,
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		FEFB0E3B1E8968F9005A810E /* Test 3 */ = {
+			isa = PBXGroup;
+			children = (
+				FEFB0E3C1E896979005A810E /* test3ViewController.swift */,
+			);
+			name = "Test 3";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEFB0E2D1E893F5E005A810E /* test1ViewController.swift in Sources */,
+				FEFB0E3D1E896979005A810E /* test3ViewController.swift in Sources */,
 				FEFB0E371E896589005A810E /* test2ViewController.swift in Sources */,
 				FEFB0E3A1E896609005A810E /* UIViewController.swift in Sources */,
 				FE7607151E892FB200A405A9 /* ViewController.swift in Sources */,
