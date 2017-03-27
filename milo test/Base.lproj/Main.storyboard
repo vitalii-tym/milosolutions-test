@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="milo_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpg-Je-y9b">
+                                <rect key="frame" x="172" y="142.5" width="30" height="30"/>
+                                <state key="normal" title="Test"/>
+                                <connections>
+                                    <action selector="test1Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VWG-PM-0Xc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nrj-8F-A9r">
+                                <rect key="frame" x="16" y="30" width="343" height="107.5"/>
+                                <string key="text">1. We need to be able to add in every UITextField in the app custom cancelButton which clears the text of textfield, using this line:
+
+myTextField.addCancelButton()
+
+This cancel button will have an image, which we have in assets with name “textfield-cancel-button”
+
+This cancel button should be in the right side of textField and it should be visible only when this textfield in edit mode (textfield is active now)</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We need to have an ability to call function displayAlert(title: String, message: String) in every UIViewController in the app." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3II-Hk-fQn">
+                                <rect key="frame" x="16" y="192.5" width="343" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iei-61-gvG">
+                                <rect key="frame" x="172" y="219" width="30" height="30"/>
+                                <state key="normal" title="Test"/>
+                                <connections>
+                                    <action selector="test2Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PIP-6s-vdp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evl-Tb-gIY">
+                                <rect key="frame" x="16" y="269" width="343" height="172"/>
+                                <string key="text">We have this kind of code:
+
+override func viewDidAppear(animated: Bool) { var result = 0
+print("Hello dear user!")
+for x in 1...99999 { result += x
+}
+displayAlert("Title", message: "We have a result for you! \(result)")
+print("How are you today?") }
+
+Our goal is:
+1. Print “Hello dear user”
+2. Start math calculation without affecting of work process of next part of the app
+3. Print “How are you today?”
+4. When math calculation is over we need to use method displayAlert with math result</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gda-dO-1X3">
+                                <rect key="frame" x="172" y="446" width="30" height="30"/>
+                                <state key="normal" title="Test"/>
+                                <connections>
+                                    <action selector="test3Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gpl-xX-xiU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Nrj-8F-A9r" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="3Oi-W8-7jx"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="3II-Hk-fQn" secondAttribute="leading" id="B8V-aJ-rbc"/>
+                            <constraint firstItem="3II-Hk-fQn" firstAttribute="top" secondItem="jpg-Je-y9b" secondAttribute="bottom" constant="20" id="Cs0-qi-a3k"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3II-Hk-fQn" secondAttribute="trailing" id="DmM-Wt-jRs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="evl-Tb-gIY" secondAttribute="trailing" id="EdE-zN-iig"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Nrj-8F-A9r" secondAttribute="trailing" id="F00-Jt-mJt"/>
+                            <constraint firstItem="Iei-61-gvG" firstAttribute="top" secondItem="3II-Hk-fQn" secondAttribute="bottom" constant="5" id="IzD-AO-4pe"/>
+                            <constraint firstItem="jpg-Je-y9b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OQh-67-TMv"/>
+                            <constraint firstItem="Gda-dO-1X3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P9S-pS-w1w"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Nrj-8F-A9r" secondAttribute="leading" id="cP9-pc-aD0"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="evl-Tb-gIY" secondAttribute="leading" id="eka-DV-MQC"/>
+                            <constraint firstItem="evl-Tb-gIY" firstAttribute="top" secondItem="Iei-61-gvG" secondAttribute="bottom" constant="20" id="fVG-Bd-qau"/>
+                            <constraint firstItem="Iei-61-gvG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iLo-ot-3va"/>
+                            <constraint firstItem="Gda-dO-1X3" firstAttribute="top" secondItem="evl-Tb-gIY" secondAttribute="bottom" constant="5" id="qEc-jR-ggG"/>
+                            <constraint firstItem="jpg-Je-y9b" firstAttribute="top" secondItem="Nrj-8F-A9r" secondAttribute="bottom" constant="5" id="yQh-5g-beq"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+</document>
