@@ -14,6 +14,8 @@
 		FE76071D1E892FB200A405A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE76071B1E892FB200A405A9 /* LaunchScreen.storyboard */; };
 		FEFB0E241E893A87005A810E /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFB0E231E893A87005A810E /* UITextFieldExtension.swift */; };
 		FEFB0E2D1E893F5E005A810E /* test1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFB0E2C1E893F5E005A810E /* test1ViewController.swift */; };
+		FEFB0E371E896589005A810E /* test2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFB0E361E896589005A810E /* test2ViewController.swift */; };
+		FEFB0E3A1E896609005A810E /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFB0E391E896609005A810E /* UIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		FE76071E1E892FB200A405A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FEFB0E231E893A87005A810E /* UITextFieldExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
 		FEFB0E2C1E893F5E005A810E /* test1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = test1ViewController.swift; sourceTree = "<group>"; };
+		FEFB0E361E896589005A810E /* test2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = test2ViewController.swift; sourceTree = "<group>"; };
+		FEFB0E391E896609005A810E /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				FEFB0E251E893A91005A810E /* Test 1 */,
+				FEFB0E351E8964D8005A810E /* Test 2 */,
 				FE7607121E892FB200A405A9 /* AppDelegate.swift */,
 				FE7607141E892FB200A405A9 /* ViewController.swift */,
 				FE7607161E892FB200A405A9 /* Main.storyboard */,
@@ -82,6 +87,23 @@
 			isa = PBXGroup;
 			children = (
 				FEFB0E231E893A87005A810E /* UITextFieldExtension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		FEFB0E351E8964D8005A810E /* Test 2 */ = {
+			isa = PBXGroup;
+			children = (
+				FEFB0E361E896589005A810E /* test2ViewController.swift */,
+				FEFB0E381E8965DE005A810E /* Extensions */,
+			);
+			name = "Test 2";
+			sourceTree = "<group>";
+		};
+		FEFB0E381E8965DE005A810E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FEFB0E391E896609005A810E /* UIViewController.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -159,6 +181,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEFB0E2D1E893F5E005A810E /* test1ViewController.swift in Sources */,
+				FEFB0E371E896589005A810E /* test2ViewController.swift in Sources */,
+				FEFB0E3A1E896609005A810E /* UIViewController.swift in Sources */,
 				FE7607151E892FB200A405A9 /* ViewController.swift in Sources */,
 				FEFB0E241E893A87005A810E /* UITextFieldExtension.swift in Sources */,
 				FE7607131E892FB200A405A9 /* AppDelegate.swift in Sources */,

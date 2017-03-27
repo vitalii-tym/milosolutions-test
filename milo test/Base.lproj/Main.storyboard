@@ -23,8 +23,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpg-Je-y9b">
-                                <rect key="frame" x="172" y="186.5" width="30" height="30"/>
-                                <state key="normal" title="Test"/>
+                                <rect key="frame" x="167" y="186.5" width="40" height="30"/>
+                                <state key="normal" title="Test 1"/>
                                 <connections>
                                     <action selector="test1Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VWG-PM-0Xc"/>
                                     <segue destination="AIo-DC-Uag" kind="show" id="ajh-03-ffS"/>
@@ -50,17 +50,19 @@ This cancel button should be in the right side of textField and it should be vis
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iei-61-gvG">
-                                <rect key="frame" x="172" y="263" width="30" height="30"/>
-                                <state key="normal" title="Test"/>
+                                <rect key="frame" x="165.5" y="263" width="43" height="30"/>
+                                <state key="normal" title="Test 2"/>
                                 <connections>
                                     <action selector="test2Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PIP-6s-vdp"/>
+                                    <segue destination="rLm-aN-XpK" kind="show" id="Gwg-T4-mp5"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evl-Tb-gIY">
-                                <rect key="frame" x="16" y="313" width="343" height="172"/>
+                                <rect key="frame" x="16" y="313" width="343" height="183"/>
                                 <string key="text">We have this kind of code:
 
-override func viewDidAppear(animated: Bool) { var result = 0
+override func viewDidAppear(animated: Bool) { 
+var result = 0
 print("Hello dear user!")
 for x in 1...99999 { result += x
 }
@@ -77,8 +79,8 @@ Our goal is:
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gda-dO-1X3">
-                                <rect key="frame" x="172" y="490" width="30" height="30"/>
-                                <state key="normal" title="Test"/>
+                                <rect key="frame" x="165.5" y="501" width="43" height="30"/>
+                                <state key="normal" title="Test 3"/>
                                 <connections>
                                     <action selector="test3Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gpl-xX-xiU"/>
                                 </connections>
@@ -108,6 +110,59 @@ Our goal is:
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1056.8" y="122.78860569715144"/>
+        </scene>
+        <!--Test2 View Controller-->
+        <scene sceneID="Jap-eL-uMT">
+            <objects>
+                <viewController id="rLm-aN-XpK" userLabel="Test2 View Controller" customClass="test2ViewController" customModule="milo_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1BL-yV-Wag"/>
+                        <viewControllerLayoutGuide type="bottom" id="zep-eN-dHS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6UH-4E-nxL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R11-cd-sZA">
+                                <rect key="frame" x="144" y="232" width="87" height="30"/>
+                                <state key="normal" title="Display Alert"/>
+                                <connections>
+                                    <action selector="displayAlertTapped:" destination="rLm-aN-XpK" eventType="touchUpInside" id="vYz-JN-PyZ"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="skc-sh-KPs">
+                                <rect key="frame" x="66" y="120" width="243" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="message" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uS0-nr-BHl">
+                                <rect key="frame" x="66" y="165" width="243" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="R11-cd-sZA" firstAttribute="centerX" secondItem="6UH-4E-nxL" secondAttribute="centerX" id="3zC-0Z-VG4"/>
+                            <constraint firstItem="skc-sh-KPs" firstAttribute="leading" secondItem="6UH-4E-nxL" secondAttribute="leadingMargin" constant="50" id="7mr-7O-2YL"/>
+                            <constraint firstItem="uS0-nr-BHl" firstAttribute="leading" secondItem="6UH-4E-nxL" secondAttribute="leadingMargin" constant="50" id="LKx-H3-kKz"/>
+                            <constraint firstItem="skc-sh-KPs" firstAttribute="top" secondItem="1BL-yV-Wag" secondAttribute="bottom" constant="56" id="NVv-5p-AUd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="skc-sh-KPs" secondAttribute="trailing" constant="50" id="OwN-0G-33P"/>
+                            <constraint firstItem="R11-cd-sZA" firstAttribute="top" secondItem="uS0-nr-BHl" secondAttribute="bottom" constant="37" id="QmE-EU-Ydl"/>
+                            <constraint firstItem="uS0-nr-BHl" firstAttribute="top" secondItem="skc-sh-KPs" secondAttribute="bottom" constant="15" id="Uod-Oc-ztO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uS0-nr-BHl" secondAttribute="trailing" constant="50" id="juY-q9-JTm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="alertTextField" destination="skc-sh-KPs" id="fKs-PW-2W3"/>
+                        <outlet property="messageTextField" destination="uS0-nr-BHl" id="enT-U6-xe8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DvB-VU-NSo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1846" y="142"/>
         </scene>
         <!--Test1 View Controller-->
         <scene sceneID="n4i-oV-fGs">
@@ -154,7 +209,7 @@ Our goal is:
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E3p-NB-RxE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1804" y="123"/>
+            <point key="canvasLocation" x="1846" y="-541"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5eI-gb-dly">
