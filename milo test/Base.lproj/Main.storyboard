@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="h8J-zS-PBL">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -23,14 +23,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpg-Je-y9b">
-                                <rect key="frame" x="172" y="142.5" width="30" height="30"/>
+                                <rect key="frame" x="172" y="186.5" width="30" height="30"/>
                                 <state key="normal" title="Test"/>
                                 <connections>
                                     <action selector="test1Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VWG-PM-0Xc"/>
+                                    <segue destination="AIo-DC-Uag" kind="show" id="ajh-03-ffS"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nrj-8F-A9r">
-                                <rect key="frame" x="16" y="30" width="343" height="107.5"/>
+                                <rect key="frame" x="16" y="74" width="343" height="107.5"/>
                                 <string key="text">1. We need to be able to add in every UITextField in the app custom cancelButton which clears the text of textfield, using this line:
 
 myTextField.addCancelButton()
@@ -43,20 +44,20 @@ This cancel button should be in the right side of textField and it should be vis
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We need to have an ability to call function displayAlert(title: String, message: String) in every UIViewController in the app." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3II-Hk-fQn">
-                                <rect key="frame" x="16" y="192.5" width="343" height="21.5"/>
+                                <rect key="frame" x="16" y="236.5" width="343" height="21.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iei-61-gvG">
-                                <rect key="frame" x="172" y="219" width="30" height="30"/>
+                                <rect key="frame" x="172" y="263" width="30" height="30"/>
                                 <state key="normal" title="Test"/>
                                 <connections>
                                     <action selector="test2Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PIP-6s-vdp"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evl-Tb-gIY">
-                                <rect key="frame" x="16" y="269" width="343" height="172"/>
+                                <rect key="frame" x="16" y="313" width="343" height="172"/>
                                 <string key="text">We have this kind of code:
 
 override func viewDidAppear(animated: Bool) { var result = 0
@@ -76,7 +77,7 @@ Our goal is:
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gda-dO-1X3">
-                                <rect key="frame" x="172" y="446" width="30" height="30"/>
+                                <rect key="frame" x="172" y="490" width="30" height="30"/>
                                 <state key="normal" title="Test"/>
                                 <connections>
                                     <action selector="test3Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gpl-xX-xiU"/>
@@ -102,8 +103,74 @@ Our goal is:
                             <constraint firstItem="jpg-Je-y9b" firstAttribute="top" secondItem="Nrj-8F-A9r" secondAttribute="bottom" constant="5" id="yQh-5g-beq"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="2vv-Gq-j5e"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1056.8" y="122.78860569715144"/>
+        </scene>
+        <!--Test1 View Controller-->
+        <scene sceneID="n4i-oV-fGs">
+            <objects>
+                <viewController id="AIo-DC-Uag" customClass="test1ViewController" customModule="milo_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4zv-K8-T7A"/>
+                        <viewControllerLayoutGuide type="bottom" id="djh-c6-7Lu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="prS-bD-FUd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FGX-I1-tAK" userLabel="Test1 Text Field 1">
+                                <rect key="frame" x="16" y="89" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CRC-0U-LwY" userLabel="Test1 Text Field 2">
+                                <rect key="frame" x="16" y="127" width="293" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="gAK-uh-OZS"/>
+                                </constraints>
+                                <color key="textColor" red="0.050980392159999999" green="0.37254901959999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="CRC-0U-LwY" secondAttribute="trailing" constant="50" id="8aL-6r-UvH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FGX-I1-tAK" secondAttribute="trailing" id="HwT-gL-SsW"/>
+                            <constraint firstItem="CRC-0U-LwY" firstAttribute="top" secondItem="FGX-I1-tAK" secondAttribute="bottom" constant="8" id="UGS-qo-Ln8"/>
+                            <constraint firstItem="FGX-I1-tAK" firstAttribute="top" secondItem="4zv-K8-T7A" secondAttribute="bottom" constant="25" id="Xj2-xg-k8j"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="CRC-0U-LwY" secondAttribute="leading" id="hlh-af-hpg"/>
+                            <constraint firstItem="FGX-I1-tAK" firstAttribute="leading" secondItem="prS-bD-FUd" secondAttribute="leadingMargin" id="pMH-mK-Gy7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="test1TextField" destination="FGX-I1-tAK" id="Cmv-6h-736"/>
+                        <outlet property="test1TextField2" destination="CRC-0U-LwY" id="fUw-D9-w2m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E3p-NB-RxE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1804" y="123"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5eI-gb-dly">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="h8J-zS-PBL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TEO-M5-Y7H">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="fkq-hh-vzF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kAs-po-UTh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
         </scene>

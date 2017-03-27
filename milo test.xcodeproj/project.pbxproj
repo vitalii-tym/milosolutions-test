@@ -12,6 +12,8 @@
 		FE7607181E892FB200A405A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE7607161E892FB200A405A9 /* Main.storyboard */; };
 		FE76071A1E892FB200A405A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE7607191E892FB200A405A9 /* Assets.xcassets */; };
 		FE76071D1E892FB200A405A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE76071B1E892FB200A405A9 /* LaunchScreen.storyboard */; };
+		FEFB0E241E893A87005A810E /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFB0E231E893A87005A810E /* UITextFieldExtension.swift */; };
+		FEFB0E2D1E893F5E005A810E /* test1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFB0E2C1E893F5E005A810E /* test1ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		FE7607191E892FB200A405A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE76071C1E892FB200A405A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE76071E1E892FB200A405A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEFB0E231E893A87005A810E /* UITextFieldExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
+		FEFB0E2C1E893F5E005A810E /* test1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = test1ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		FE7607111E892FB200A405A9 /* milo test */ = {
 			isa = PBXGroup;
 			children = (
+				FEFB0E251E893A91005A810E /* Test 1 */,
 				FE7607121E892FB200A405A9 /* AppDelegate.swift */,
 				FE7607141E892FB200A405A9 /* ViewController.swift */,
 				FE7607161E892FB200A405A9 /* Main.storyboard */,
@@ -62,6 +67,23 @@
 				FE76071E1E892FB200A405A9 /* Info.plist */,
 			);
 			path = "milo test";
+			sourceTree = "<group>";
+		};
+		FEFB0E251E893A91005A810E /* Test 1 */ = {
+			isa = PBXGroup;
+			children = (
+				FEFB0E2C1E893F5E005A810E /* test1ViewController.swift */,
+				FEFB0E2E1E894142005A810E /* Extensions */,
+			);
+			name = "Test 1";
+			sourceTree = "<group>";
+		};
+		FEFB0E2E1E894142005A810E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FEFB0E231E893A87005A810E /* UITextFieldExtension.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +158,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEFB0E2D1E893F5E005A810E /* test1ViewController.swift in Sources */,
 				FE7607151E892FB200A405A9 /* ViewController.swift in Sources */,
+				FEFB0E241E893A87005A810E /* UITextFieldExtension.swift in Sources */,
 				FE7607131E892FB200A405A9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +323,7 @@
 				FE7607231E892FB200A405A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
